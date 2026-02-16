@@ -4,8 +4,8 @@ const axios = require("axios");
 const app = express();
 app.use(express.json());
 
-const TELEGRAM_TOKEN = "ТВОЙ_ТОКЕН_СЮДА";
-const CHAT_ID = "ТВОЙ_CHAT_ID";
+const TELEGRAM_TOKEN = "8546975830:AAGH1W9FhNU5hhXugN8Duxfs0fZufKE5rAc";
+const CHAT_ID = "7956673713";
 
 app.post("/webhook", async (req, res) => {
   const data = JSON.stringify(req.body, null, 2);
@@ -25,3 +25,4 @@ app.get("/", (req, res) => {
 app.listen(3000, () => {
   console.log("Server started");
 });
+
